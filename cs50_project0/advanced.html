@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            #linker{
+                float: right;
+                padding: 11px 4px;
+                padding-right: 20px;
+            }
+            .col, .row{
+                padding: 5px 0 0 15px; 
+            }
+            #middle{
+                color: red;
+                height: 60px;
+                font-size: 20px;
+                padding: 6px;
+            }
+            .container, .col{
+                float: left;
+                margin-right: 0;
+            }
+            input[type="text"]
+            {
+                min-width: 450px;
+            }
+            input[type="submit"]
+            {
+                float: right;
+            }
+            .first{
+                font-size: 20px;
+            }
+            .last{
+                font-size: small;
+                color: rgb(104, 101, 101);
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://google.com/search">
+        <div>
+            <img src="googlelogo.png" alt="Google" width="100" height="42">
+            <a href="index.html" id="linker">Search</a>
+            <p id="middle">
+                Advanced Search
+            </p>
+            
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col first">
+                Find pages with...
+              </div>
+              <div class="col" style="min-width: 500px;">
+              </div>
+              <div class="col last" style="font-weight: bold;">
+                do this in the search box.
+              </div>
+            </div>
+              <div class="row">
+              <div class="col">
+                all these words:
+              </div>
+            <div class="col" style="min-width: 500px;">
+                <input type="text" name="as_q">
+            </div>
+            <div class="col last">
+                Type the important words: tri-colour rat terrier
+            </div>
+              </div>
+              <div class="row">
+            <div class="col">
+                this exact word or phrase:
+            </div>
+            <div class="col" style="min-width: 500px;">
+                <input type="text" name="as_epq">
+            </div>
+            <div class="col last">
+                Put exact words in quotes: "rat terrier"
+            </div>
+              </div>
+              <div class="row">
+            <div class="col">
+                any of these words:
+            </div>
+            <div class="col" style="min-width: 500px;">
+                <input type="text" name="as_oq">
+            </div>
+            <div class="col last">
+                Type OR between all the words you want: miniature or standard
+            </div>
+              </div>
+            <div class="row">
+            <div class="col">
+                none of these words
+            </div>
+            <div class="col" style="min-width: 500px;">
+                <input type="text" name="as_eq">
+            </div>
+            <div class="col last">
+                Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+            </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col" style="min-width: 500px;">
+                    <input type="submit" value="Advanced Search" style="background-color: #4d90fe; font-weight: bold; color: white; font-size: small; padding: 2px; margin-right: 30px;">
+                </div>
+                <div class="col"> 
+                </div>
+                </div>
+            </div>
+          </div>
+    </form>
+    </body>
+</html>
